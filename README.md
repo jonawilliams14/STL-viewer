@@ -2,11 +2,15 @@
 
 A lightweight, zero-dependency 3D STL file viewer that runs entirely in the browser. Built with [Three.js](https://threejs.org/) — no installation, no build step, no server required.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-4fffb0?style=flat-square&logo=github)](https://YOUR_USERNAME.github.io/stl-viewer)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-4fffb0?style=flat-square&logo=github)](https://jonawilliams14.github.io/STL-viewer)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 [![Three.js](https://img.shields.io/badge/Three.js-r128-00c8ff?style=flat-square)](https://threejs.org/)
 
-![STL Viewer Screenshot](docs/screenshot.png)
+---
+
+## 🌐 Live Demo
+
+**[jonawilliams14.github.io/STL-viewer](https://jonawilliams14.github.io/STL-viewer)**
 
 ---
 
@@ -37,17 +41,16 @@ A lightweight, zero-dependency 3D STL file viewer that runs entirely in the brow
 
 ## Usage
 
-### Option A — Open locally
-```bash
-git clone https://github.com/YOUR_USERNAME/stl-viewer.git
-cd stl-viewer
-open index.html   # macOS
-# or just double-click index.html in your file explorer
-```
+### Option A — GitHub Pages (live)
+Visit **[jonawilliams14.github.io/STL-viewer](https://jonawilliams14.github.io/STL-viewer)** directly in any browser.
 
-### Option B — GitHub Pages (live URL)
-Push to `main` and enable GitHub Pages from **Settings → Pages → Source: main branch / root**.  
-Your viewer will be live at `https://YOUR_USERNAME.github.io/stl-viewer`.
+### Option B — Open locally
+```bash
+git clone https://github.com/jonawilliams14/STL-viewer.git
+cd STL-viewer
+open index.html   # macOS
+# or double-click index.html in your file explorer
+```
 
 ### Option C — Any static host
 Upload `index.html` to Netlify, Vercel, S3, or any static host. No build step needed.
@@ -83,19 +86,21 @@ Modify the constants at the top of the script to customize dimensions, wall thic
 ## Project Structure
 
 ```
-stl-viewer/
-├── index.html                  # Main viewer (single-file, no build needed)
+STL-viewer/
+├── index.html                       ← Main viewer (single-file, no build needed)
 ├── models/
-│   └── pixel10a_holder.stl     # Sample model — Pixel 10a phone holder
+│   ├── pixel10a_holder.stl          ← Sample model: Pixel 10a phone holder
+│   └── README.md
 ├── scripts/
-│   └── generate_holder.py      # Python script to regenerate the STL
-├── docs/
-│   └── screenshot.png          # README screenshot
+│   └── generate_holder.py           ← Python script to regenerate the STL
+├── docs/                            ← Screenshots and documentation assets
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml          # GitHub Pages auto-deploy workflow
+│       └── deploy.yml               ← Auto-deploys to GitHub Pages on push to main
 ├── .gitignore
 ├── LICENSE
+├── CHANGELOG.md
+├── CONTRIBUTING.md
 └── README.md
 ```
 
@@ -126,11 +131,12 @@ stl-viewer/
 1. Fork the repo
 2. Create a feature branch: `git checkout -b feature/my-feature`
 3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature/my-feature`
-5. Open a Pull Request
+4. Push and open a Pull Request
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 
 ---
 
 ## License
 
-MIT © [Your Name](https://github.com/YOUR_USERNAME)
+MIT © [jonawilliams14](https://github.com/jonawilliams14)
